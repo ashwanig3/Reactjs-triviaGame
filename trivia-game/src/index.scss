@@ -1,0 +1,102 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+// ========================================
+// Header
+// =======================================
+
+.game-header {
+  // background-color: cornflowerblue;
+  box-shadow: 0 0 7px 0.5px #bdc0c8;
+  padding: 20px;
+  h1 {
+    margin: 0;
+    color: #d87d1c;
+  }
+}
+
+// ==========================================
+// Quiz-container
+// =========================================
+
+.quiz-container {
+  width: 50%;
+  margin: 50px auto;
+  .score {
+    color: #d87d1c;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  .quiz-top-nav {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.quiz-wrapper {
+  padding: 20px;
+  background-color: #fff7c0;
+  border-radius: 10px;
+  // margin-top: 10px;
+  h3 {
+    margin: 0;
+  }
+  p {
+    padding: 10px 5px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  p:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+}
+
+// ===========================================
+// Modale
+// =========================================
+
+.response-container {
+  height: 200px;
+  width: 500px;
+  text-align: center;
+  margin: 50px auto;
+  background-color: #fff7c0;
+  position: relative;
+  .right,
+  .wrong {
+    font-size: 30px;
+    font-weight: 600;
+    color: green;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    i {
+      display: block;
+      font-size: 80px;
+      // font-weight: 400;
+    }
+  }
+  .wrong {
+    color: red;
+  }
+  .cross {
+    position: absolute;
+    right: 10px;
+    font-weight: 600;
+    top: 10px;
+    cursor: pointer;
+  }
+}
