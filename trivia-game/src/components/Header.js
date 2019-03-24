@@ -5,6 +5,7 @@ export default class Header extends Component {
     return (
       <div className="game-header">
         <h1>Trivia Game</h1>
+        <a href="index.html">Start Quiz</a>
       </div>
     );
   }

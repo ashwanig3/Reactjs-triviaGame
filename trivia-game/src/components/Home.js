@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { getAllQuestions } from "../actions/action";
 import ResponseModale from "./ResponseModale";
+import Exit from "./Exit";
 
 class Home extends Component {
   state = {
@@ -65,7 +66,9 @@ class Home extends Component {
     const { questions } = this.props;
     const { currentQues, options, score, isModale } = this.state;
     if (!isModale) {
-      return (
+      return currentQues > 9 ? (
+        <Exit score={score} />
+      ) : (
         <div className="quiz-container">
           <div className="quiz-top-nav">
             <span className="score">{currentQues + 1} out of 10</span>

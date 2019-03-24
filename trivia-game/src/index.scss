@@ -21,9 +21,15 @@ code {
   // background-color: cornflowerblue;
   box-shadow: 0 0 7px 0.5px #bdc0c8;
   padding: 20px;
+  display: flex;
+  justify-content: space-between;
   h1 {
     margin: 0;
     color: #d87d1c;
+  }
+  a {
+    color: #d87d1c;
+    text-decoration: none;
   }
 }
 
@@ -99,4 +105,14 @@ code {
     top: 10px;
     cursor: pointer;
   }
+}
+
+.final-score {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: #d87d29;
+  font-size: 20px;
+  font-weight: 600;
 }
